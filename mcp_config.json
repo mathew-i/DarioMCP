@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "dario-mcp": {
+      "_comment": "Option 1: Using uv run (recommended if uv is in PATH)",
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "-m",
+        "dariomcp.server"
+      ],
+      "env": {
+        "DATABASE_URI": "postgresql://padmin:TopSecret@localhost:5432/testdb"
+      }
+    }
+  },
+  "_alternatives": {
+    "_comment": "Alternative configurations - uncomment and use one of these:",
+    "option2_wrapper_script": {
+      "mcpServers": {
+        "dario-mcp": {
+          "command": "/absolute/path/to/run_server.sh",
+          "args": [],
+          "env": {
+            "DATABASE_URI": "postgresql://padmin:TopSecret@localhost:5432/testdb"
+          }
+        }
+      }
+    },
+    "option3_venv_python": {
+      "mcpServers": {
+        "dario-mcp": {
+          "command": "/absolute/path/to/.venv/bin/python",
+          "args": ["-m", "dariomcp.server"],
+          "env": {
+            "DATABASE_URI": "postgresql://padmin:TopSecret@localhost:5432/testdb"
+          }
+        }
+      }
+    }
+  }
+}
+

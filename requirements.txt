@@ -1,0 +1,9 @@
+# MCP SDK - Install from: https://github.com/modelcontextprotocol/python-sdk
+# pip install git+https://github.com/modelcontextprotocol/python-sdk.git
+# Or use: mcp>=0.1.0 if available on PyPI
+mcp>=0.1.0
+psycopg2-binary>=2.9.9
+python-dotenv>=1.0.0
+httpx>=0.25.0
+pydantic>=2.0.0
+

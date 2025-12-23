@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dario-mcp": {
+      "command": "/Users/mateusziwaszkiewicz/repos/myprojects/DarioMCP/DarioMCP/run_server.sh",
+      "args": [],
+      "env": {
+        "DATABASE_URI": "postgresql://padmin:TopSecret@localhost:5432/testdb"
+      }
+    }
+  }
+}
+

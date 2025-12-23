@@ -1,0 +1,31 @@
+[project]
+name = "dario-mcp"
+version = "0.1.0"
+description = "MCP server for analyzing PostgreSQL tables"
+authors = [
+    {name = "DarioMCP Team"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=0.1.0",
+    "psycopg2-binary>=2.9.9",
+    "python-dotenv>=1.0.0",
+    "httpx>=0.25.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+dario-mcp = "dariomcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["dariomcp"]
+
+[tool.uv]
+# Use dependency-groups instead of dev-dependencies (deprecated)
+# dependency-groups.dev = []
+

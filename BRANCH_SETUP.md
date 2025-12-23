@@ -13,7 +13,7 @@ The following folders have been created and committed:
 
 - `setup/` - Setup and configuration files
 - `tests/` - Test files and test suites
-- `mcp/` - MCP (Model Context Protocol) related files
+- `dariomcp/` - MCP (Model Context Protocol) related files
 
 ## Branch Structure
 
